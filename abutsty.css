@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&family=Rubik+Puddles&family=Shrikhand&display=swap');
+*{margin: 0;padding: 0;color: gold;}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(#0f0c29,#302b63,#24243e);
+}
+@media screen and (max-width:1000px){
+  h1{
+      position: absolute;
+      top: 50px;
+      letter-spacing: 10px;
+      font-size: 80px;
+       font-family: 'Rubik Puddles', cursive;
+      animation:color 6s linear infinite;
+
+  }
+   #con{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+        width: 800px;
+        height: 90%;
+        background-color:;
+      position: relative;
+      top: 100px;
+      left: 10px;
+     
+      border-radius:100px;
+      box-shadow:inset 10px 10px 10px rgba(0,0,0,0.5),
+      12px 10px 14px rgba(0,0,0,0.5),
+      12px 12px 14px rgba(0,0,0,0.5),
+      inset -10px -10px 14px rgba(0,0,0,0.5);
+    }
+    #con:before{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        content:'';
+        position: absolute;
+        top: 110px;
+        left: 20%;
+        transform: translateX(-20%);
+        background-color: white;
+    }
+     #con:after{
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        content:'';
+        position: absolute;
+        top: 240px;
+        left: 10%;
+        transform: translateX(-10%);
+        background-color: white;
+    }
+    #con li{
+        list-style: none;
+        font-size: 70px;
+        border-radius: 40px;
+        background: #fffc40;
+        color: black;
+       font-family: 'Shrikhand', cursive;
+        margin: 30px;padding: 10px;
+    }  
+    .pro{
+        margin-top: 250px;
+        margin-left: 50px;
+    }
+    #con h1{
+        position: absolute;
+        top: 100px;
+        font-size: 70px;
+        font-family: 'Shrikhand', cursive;
+
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+        color: #ff1569;
+        position: relative;
+        top: 400px;
+        padding: 20px;
+        right: 120px;
+        background: #00c0ff;
+        border-radius: 40px;
+        font-size: 70px;
+    }
+    @keyframes color{
+       0%{color: #f8ff55;
+       } 
+       50%{
+           color: #00abff;
+       }
+       70%{
+           color: #ff15fc;
+       }
+       100%{
+           color: #00ff81;
+       }
+    }
+}
